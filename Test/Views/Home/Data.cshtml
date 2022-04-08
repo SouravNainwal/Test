@@ -1,0 +1,31 @@
+﻿<li> @ViewBag.name</li>
+<li>
+    @ViewBag.Cit
+</li>
+<li>
+    @ViewData["name"]
+</li>
+<li>
+    @ViewData["name"]
+</li>
+<li>
+    @ViewData["phoneno"]
+</li>
+
+<li>
+    @TempData["hgdsc"]
+</li>
+
+<br />
+@foreach(var i in (List<int>)TempData["list"])
+            {
+               <li>@i</li>
+            }
+<br />
+@ViewBag.res
+    @*TempData["list"] = new List<int>
+        ()
+        {
+        56,76,76,89
+        };*@
+
